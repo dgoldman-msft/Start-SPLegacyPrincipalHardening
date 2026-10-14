@@ -1,6 +1,6 @@
 # Start-SPLegacyPrincipalHardening
 
-**Read-only** security review of a Microsoft 365 tenant's exposure to the legacy SharePoint add-in / Azure ACS model and the first-party **SharePoint Online Client Extensibility Web Application Principal** (and its WebShell/Helper siblings). Built for incident response (phished user + mass SharePoint download) and for periodic review.
+**Read-only** security review of a Microsoft 365 tenant's exposure to the legacy SharePoint add-in / Azure ACS model and the first-party **SharePoint Online Client Extensibility Web Application Principal** (and its WebShell/Helper siblings). Built for post-incident response and for periodic review.
 
 The module **never changes the tenant**: it requests read-only Graph scopes, sends only `GET` requests to Microsoft Graph (enforced in `Invoke-GraphWithRetry`), and calls only read cmdlets in PnP.PowerShell. Every result is a recommendation, grounded in Microsoft Learn, for the customer to carry out themselves. The deliverable is a single HTML report.
 
