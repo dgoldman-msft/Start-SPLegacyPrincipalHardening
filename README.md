@@ -114,3 +114,4 @@ This module reviews and reports; it does not contain the compromise or change an
   internal\functions\   logging, retry/paging (GET-only), module install, session connect/reuse,
                         findings/Learn-reference/HTML-report plumbing, and one function per task
 ```
+
